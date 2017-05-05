@@ -10,6 +10,7 @@ Build an API to interface with the database. Current implmentation requires an e
 Command line interpretor can now save objects into a mysql database by setting the following environmental variables. The database schema is <a href="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/289/AirBnb_DB_diagramm.jpg">here</a> and below.
 <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/289/AirBnb_DB_diagramm.jpg" alt="HBnB Class Relationship">
 
+<h4>Environmental Variables</h4>
 * MySQL user: ``HBNB_MYSQL_USER=hbnb_dev``
 * MySQL password: ``HBNB_MYSQL_PWD=hbnb_dev_pwd``
 * MySQL host: ``HBNB_MYSQL_HOST=localhost``
@@ -17,7 +18,7 @@ Command line interpretor can now save objects into a mysql database by setting t
 * Storage type: ``HBNB_TYPE_STORAGE=db`` -- db is the only variable here. Any other option (including not set) will default to the storage type as a json object.
 
 ### First Phase
-Where create a command line interpretor to access objects that will store user data. Users can use the console to create objects, update object attributes, remove objects, list all objects, and store and read data from a .json file. 
+Where create a command line interpreter to access objects that will store user data. Users can use the console to create objects, update object attributes, remove objects, list all objects, and store and read data from a .json file. 
 
 
 In order to begin the console, you can run either 'python3 console.py' or './console.py' in the command line.
@@ -62,9 +63,13 @@ Additionally, the console also supports the following command formats:
 
 <h6>3. (Optional) Fill the sql databases with example SQL data.</h6>
 1. ``cat "100-dump.sql" | mysql -uroot -hlocalhost -p``
+
 2. ``cat "10-dump.sql" | mysql -uroot -hlocalhost -p``
+
 3. ``cat "7-states_list.sql" | mysql -uroot -hlocalhost -p``
+
 4. ``cat "setup_mysql_dev.sql" | mysql -uroot -hlocalhost -p``
+
 5. ``cat "setup_mysql_test.sql" | mysql -uroot -hlocalhost -p``
 
 ## Usage
