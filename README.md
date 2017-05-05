@@ -62,6 +62,7 @@ Additionally, the console also supports the following command formats:
 3. ``sudo -H pip3 install mysqlclient sqlalchemy Flask pep8``
 
 <h6>3. (Optional) Fill the sql databases with example SQL data.</h6>
+
 1. ``cat "100-dump.sql" | mysql -uroot -hlocalhost -p``
 
 2. ``cat "10-dump.sql" | mysql -uroot -hlocalhost -p``
