@@ -4,38 +4,6 @@ Recreation of the AirBnB site, from the back-end data management to the front-en
 <h4>Third Phase</h4>
 Build an API to interface with the database. Current implmentation requires an existing database in mysql. 
 
-Run the following at the root of the directory to start with example DataBase parameters.
-```
->>> HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db HBNB_API_HOST=0.0.0.0 HBNB_API_PORT=5000 python3 -m api.v1.app
-```
-Expected response:
-```
- * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
-...
-```
-A list of all the possible routes and their respective routes are available on Flasgger's application, <a href="http://0.0.0.0:5000/apidocs/">here</a>. 
-
-Input route for specific api request and available route below.
-
-http://0.0.0.0:5000/api/v1/{Route}
-
-| Route                                    | Request            |
-|------------------------------------------|--------------------|
-| states                                   | [GET, POST]        |
-| states/<state_id>                        | [GET, DELETE, PUT] |
-| states/<state_id>/cities                 | [GET, POST]        |
-| cities/<city_id>                         | [GET, DELETE. PUT] |
-| amenities                                | [GET, POST]        |
-| amenities/<amenity_ids>                  | [GET, DELETE, PUT] |
-| users                                    | [GET, POST]        |
-| users/<user_id>                          | [GET, DELETE, PUT  |
-| cities/<city_id>/places                  | [GET, POST]        |
-| places/<place_id>                        | [GET, DELETE, PUT] |
-| places/<place_id>/amenities              | [GET, DELETE]      |
-| places/<place_id>/amenities/<amenity_id> | [POST]             |
-| places/<place_id>/reviews                | [GET, POST]        |
-| reviews/<review_id>                      | [GET, DELETE, PUT] |
-| places                                   | [POST]             |
 
 
 <h4>second phase</h4>
@@ -160,6 +128,39 @@ Classes that are currently supported include BaseModel, User, City, State, Ameni
 
 #### API Access
 API -- interaction with the objects through HTTP GET requests
+
+Run the following at the root of the directory to start with example DataBase parameters.
+```
+>>> HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db HBNB_API_HOST=0.0.0.0 HBNB_API_PORT=5000 python3 -m api.v1.app
+```
+Expected response:
+```
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+...
+```
+A list of all the possible routes and their respective routes are available on Flasgger's application, <a href="http://0.0.0.0:5000/apidocs/">here</a>. 
+
+Input route for specific api request and available route below.
+
+http://0.0.0.0:5000/api/v1/{Route}
+
+| Route                                    | Request            |
+|------------------------------------------|--------------------|
+| states                                   | [GET, POST]        |
+| states/<state_id>                        | [GET, DELETE, PUT] |
+| states/<state_id>/cities                 | [GET, POST]        |
+| cities/<city_id>                         | [GET, DELETE. PUT] |
+| amenities                                | [GET, POST]        |
+| amenities/<amenity_ids>                  | [GET, DELETE, PUT] |
+| users                                    | [GET, POST]        |
+| users/<user_id>                          | [GET, DELETE, PUT  |
+| cities/<city_id>/places                  | [GET, POST]        |
+| places/<place_id>                        | [GET, DELETE, PUT] |
+| places/<place_id>/amenities              | [GET, DELETE]      |
+| places/<place_id>/amenities/<amenity_id> | [POST]             |
+| places/<place_id>/reviews                | [GET, POST]        |
+| reviews/<review_id>                      | [GET, DELETE, PUT] |
+| places                                   | [POST]             |
 
 
 The following is an example of the process to lookup objects with GET requests and create a new place object with a POST request
