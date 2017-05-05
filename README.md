@@ -79,7 +79,8 @@ Additionally, the console also supports the following command formats:
 
 #### Through Python directly:
 
-Example of Console Usage without a db:
+Example of usage through the Python interpreter without a database. Uses the file ``file.json``.
+
 ```
 ~> python3
 Python 3.4.3 (default, Nov 17 2016, 01:08:31) 
@@ -96,7 +97,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 ~>
 ```
 
-Example of Python usage directly with a db
+Example of usage through the Python interpreter with a database.
 ```
 ~> HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db python3
 Python 3.4.3 (default, Nov 17 2016, 01:08:31) 
@@ -169,7 +170,7 @@ http://0.0.0.0:5000/api/v1/{Route}
 | places                                   | [POST]             |
 
 
-The following is an example of the process to lookup objects with GET requests and create a new place object with a POST request
+The following is an example of the process to lookup objects with GET requests and create a new place object with a POST request, and some expected results.
 
 
 ```
