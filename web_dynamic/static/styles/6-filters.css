@@ -10,7 +10,8 @@
     background-color: white;
     border: solid 1px #dddddd;
     border-radius: 4px;
-/*    padding: 10px;*/
+	position: relative;	
+	display: inline-block;
     box-sizing: border-box;
 }
 
@@ -33,7 +34,6 @@ button:hover, button:focus {
 .locations, .amenities {
     height: 100%;
     width: 25%;
-/*    margin-top: -10px;*/
     padding-left: 30px;
     display: inline-block;
     position: relative;
@@ -41,6 +41,7 @@ button:hover, button:focus {
 
 .locations {
     border-right: solid 1px #dddddd;
+	display: inline-block;
 }
 
 h2, h3, h4 {
@@ -53,9 +54,9 @@ h2, h3, h4 {
 }
 
 .locations h4, .amenities h4 {
-    padding-top: 15px;
+    padding-top: 0.9em;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.9em;
     line-height: 0%;
 }
 
